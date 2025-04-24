@@ -1,6 +1,6 @@
 import HomeLayout from './homelayout'
 
-import './styles/App.css'
+import 'leaflet/dist/leaflet.css'
 
 function App() {
   return <HomeLayout />

@@ -7,11 +7,11 @@ function homeLayout() {
         <>
         <Header />
 
-        <main>
+        <main className="pt-24 w-full grow mb-10 mt-10 grid grid-cols-2 gap-x-8 px-4">
             <Body />
         </main>
 
-        <Footer />
+        <Footer/>
         </>
     )
 }

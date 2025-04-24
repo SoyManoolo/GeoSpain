@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="fixed bottom-0 left-0 right-0 bg-blue-900 text-white p-6">
+        <footer className=" bottom-0 left-0 right-0 bg-blue-900 text-white pt-6">
             <div className="container mx-auto">
                 <div className="flex flex-col space-y-2">
                     <h3 className="text-lg font-semibold">GeoSpain</h3>
