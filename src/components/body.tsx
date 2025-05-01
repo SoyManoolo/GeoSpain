@@ -16,7 +16,7 @@ interface WeatherData {
     latitude: number;
     longitude: number;
     current_weather?: CurrentWeather;
-    hourly?: any;
+    hourly?: string;
 }
 
 function Body() {
@@ -52,15 +52,15 @@ function Body() {
                     try {
                         const errorData = await response.json();
                         errorBody += ` - ${errorData.reason || JSON.stringify(errorData)}`;
-                    } catch (e) { }
+                    } catch { /* vacío */ }
                     throw new Error(errorBody);
                 }
                 const data: WeatherData = await response.json();
                 setWeatherData(data);
                 console.log("Weather Data fetched:", data);
-            } catch (err: any) {
+            } catch (err: unknown) {
                 console.error("Failed to fetch weather data:", err);
-                setError(err.message || "Error al obtener datos del tiempo.");
+                setError(err instanceof Error ? err.message : "Error al obtener datos del tiempo.");
             } finally {
                 setLoading(false);
             }
