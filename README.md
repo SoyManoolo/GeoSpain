@@ -7,7 +7,6 @@ GeoSpain es una aplicación web que permite a los usuarios buscar ubicaciones de
 *   **Búsqueda de Ubicaciones:** Introduce el nombre de una ubicación para buscar dentro de España.
 *   **Mapa Interactivo:** Muestra la ubicación buscada usando Leaflet, centrado y delimitado aproximadamente a España.
 *   **Información Meteorológica:** Muestra detalles del tiempo actual (temperatura, condiciones, velocidad del viento, dirección del viento) para la ubicación buscada utilizando la API de Open-Meteo.
-*   **Diseño Responsivo:** Construido con Tailwind CSS para adaptabilidad a diferentes tamaños de pantalla.
 
 ## Tecnologías Utilizadas
 
